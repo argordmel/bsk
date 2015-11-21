@@ -19,6 +19,9 @@ plugins.livereload.listen();
 //Reload CSS
 gulp.task('css', tasks.css(gulp, plugins, config));
 
+//Reload JS
+gulp.task('js', tasks.js(gulp, plugins, config));
+
 //Compass
 gulp.task('compass', tasks.compass(gulp, plugins, config));
 
