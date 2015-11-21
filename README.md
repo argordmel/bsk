@@ -1,6 +1,6 @@
 #SKF
 
-Starter Kit for Frontend
+Backbone - Starter Kit for Frontend
 
 ##Table of Contents
 1. Folder Structure
@@ -13,7 +13,7 @@ Starter Kit for Frontend
 
 > Folder structure options and naming conventions for software projects
 
-    . 
+    .
     ├── bower_components       # Bower Components
     │
     ├── build                  # Compiled files (alternatively `dist`)
@@ -34,7 +34,7 @@ Starter Kit for Frontend
     │   ├── sass               # Sass
     │   └── templates          # Templates
     │
-    ├── test                   # Automated tests (alternatively `spec` or `tests`)  
+    ├── test                   # Automated tests (alternatively `spec` or `tests`)
     │   ├── benchmarks         # Load and stress tests
     │   ├── integration        # End-to-end, integration tests (alternatively `e2e`)
     │   └── unit               # Unit tests
@@ -42,7 +42,7 @@ Starter Kit for Frontend
     ├── tools                  # Tools and utilities
     │
     ├── LICENSE
-    ├── README.md               
+    ├── README.md
     ├── bower.json             # Bower file
     ├── config.js              # Config Gulp
     ├── config.rb              # Config Compass
