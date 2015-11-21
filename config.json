@@ -1,0 +1,23 @@
+{
+	"app": "./src",
+	"prod": "./build",
+	"test": "./test/unit/**/*.js",
+	"js": "./build/js/**/*.js",
+	"scss": "./src/scss/**/*.scss",
+	"css": "./build/css/**/*.css",
+	"html": [
+		"./views/*.html",
+		"./views/*.phtml",
+		"./views/*.php",
+		"./view/**/*.html",
+		"./view/**/*.phtml",
+		"./view/**/*.php"
+	],
+	"browsers": [
+		"last 2 versions",
+		"Safari >= 5",
+		"iOS >= 6",
+		"ie >= 9",
+		"Android >= 4"
+	]
+}

@@ -1,0 +1,32 @@
+//Imports and modules
+@import "modules";
+
+//Imports global fonts
+@import "components/fonts";
+@import "components/utility";
+
+//Imports custom pages
+@import "pages/home";
+
+//Imports sections
+@import "sections/footer";
+
+
+//Global Style
+@media #{$small-up} {
+    body {
+
+    }
+}
+
+@media #{$medium-up} {
+    body {
+
+    }
+}
+
+@media #{$large-up} {
+    body {
+
+    }
+}

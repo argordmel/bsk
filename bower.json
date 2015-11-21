@@ -1,0 +1,11 @@
+{
+  "name": "BSK",
+  "authors": [
+    "Iván Meléndez <argordmel@gmail.com>"
+  ],
+  "description": "Backbone Starter Kit",
+  "keywords": [
+    "frontend"
+  ],
+  "license": "MIT"
+}
