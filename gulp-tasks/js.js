@@ -1,6 +1,6 @@
 /**
- * Gulp clean task
- * Delete compiled files
+ * Gulp JS task
+ * Watch for changed files
  *
  * @param  {Gulp} gulp
  * @param  {Object} plugins Available gulp plugins
@@ -15,7 +15,10 @@ module.exports = function (gulp, plugins, config) {
     'use strict';
 
     return function () {
-
+        gulp.watch([config.js+'/**/*.js'], function(event) {
+            gulp.src(event.path)
+            .pipe(plugins.livereload());
+        });
     };
 
 };
