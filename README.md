@@ -5,6 +5,7 @@ Backbone - Starter Kit for Frontend
 ##Table of Contents
 1. Folder Structure
 2. Instalation
+3. Gulp Task
 
 -----------------------------------
 
@@ -60,7 +61,7 @@ Run the following commands:
 
 3. `bower install`
 
-4. `gulp watch`
+4. `gulp`
 
 5. Navigate to: `http://localhost/yourproject/`
 
@@ -68,16 +69,32 @@ Run the following commands:
 -------------------------------------
 
 
-## 3. Build Process
+## 3. Gulp Task
 
 
-### Livereload
+### Default
+
+This task run basic components to compile SASS files and reload your browser with the last version of the code:
+
+`gulp`
+
+This will be watching for changes in SASS files and changes into `dist/css, `dist/js` and `views` folders.
+
+
+### Compass
+
+This will be watching for changes in SASS files to generate CSS files:
+
+`gulp compass`
+
+
+### Watch  / Livereload
 
 If you want to have the latest version of the code in the browser, make sure to run this command:
 
 `gulp watch`
 
-This will be watching for changes in SASS files.
+This will be watching for changes in `dist/css, `dist/js` and `views` files.
 
 
 ---------------------------------------
