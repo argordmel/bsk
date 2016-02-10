@@ -12,6 +12,8 @@
  */
 module.exports = function (gulp, plugins, config) {
 
+    'use strict';
+    
     return function () {
         // Listen
         plugins.livereload.listen();
