@@ -1,12 +1,13 @@
 # Require any additional compass plugins here.
-add_import_path "bower_components/foundation/scss"
+add_import_path "bower_components/foundation-sites/scss"
+add_import_path "bower_components/motion-ui/src"
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "build/css"
+css_dir = "dist/css"
 sass_dir = "src/scss"
-images_dir = "build/img"
-javascripts_dir = "build/js"
+images_dir = "dist/img"
+javascripts_dir = "dist/js"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
@@ -16,7 +17,7 @@ output_style = :compact
 # relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-# line_comments = false
+line_comments = true
 
 # If you prefer the indented syntax, you might want to regenerate this
 # project again passing --syntax sass, or you can uncomment this:

@@ -1,11 +1,12 @@
 {
-	"app": "./src",
-	"prod": "./build",
-	"test": "./test/unit/**/*.js",
-	"js": "./build/js/**/*.js",
-	"scss": "./src/scss/**/*.scss",
-	"css": "./build/css/**/*.css",
-	"html": [
+	"app":          "./src",
+	"dist":         "./dist",
+	"scss":         "./src/scss",
+	"test":         "./test/unit/**/*.js",
+	"js":           "./src/js/**/*.js",
+	"css":          "./dist/css/**/*.css",
+    "templates":    "./src/templates/**/*.html",
+	"views":        [
 		"./views/*.html",
 		"./views/*.phtml",
 		"./views/*.php",
@@ -13,7 +14,7 @@
 		"./view/**/*.phtml",
 		"./view/**/*.php"
 	],
-	"browsers": [
+	"browsers":     [
 		"last 2 versions",
 		"Safari >= 5",
 		"iOS >= 6",

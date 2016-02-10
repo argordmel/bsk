@@ -1,8 +1,10 @@
-//Imports and modules
-@import "modules";
+// Import modules
+@import 'modules';
 
-//Imports global fonts
+//Imports custom components
+@import "components/alert";
 @import "components/fonts";
+@import "components/form";
 @import "components/utility";
 
 //Imports custom pages
@@ -10,7 +12,6 @@
 
 //Imports sections
 @import "sections/footer";
-
 
 //Global Style
 @media #{$small-up} {

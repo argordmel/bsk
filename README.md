@@ -16,7 +16,7 @@ Backbone - Starter Kit for Frontend
     .
     ├── bower_components       # Bower Components
     │
-    ├── build                  # Compiled files (alternatively `dist`)
+    ├── dist                   # Compiled files (alternatively `build`)
     │   ├── css                # Css
     │   ├── fonts              # Fonts
     │   ├── img                # Images

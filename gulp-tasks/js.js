@@ -15,10 +15,7 @@ module.exports = function (gulp, plugins, config) {
     'use strict';
 
     return function () {
-        gulp.watch([config.js+'/**/*.js'], function(event) {
-            gulp.src(event.path)
-            .pipe(plugins.livereload());
-        });
+        
     };
 
 };
