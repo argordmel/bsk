@@ -1,5 +1,8 @@
 // Import modules
-@import 'md/material-foundation';
+
+@import "modules";
+
+@import 'md/md';
 
 //Imports custom components
 @import "components/alert";
