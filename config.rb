@@ -1,6 +1,7 @@
 # Require any additional compass plugins here.
 add_import_path "bower_components/foundation-sites/scss"
 add_import_path "bower_components/motion-ui/src"
+add_import_path "bower_components/mdi/scss"
 
 # Set this to the root of your project when deployed:
 http_path = "/"

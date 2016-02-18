@@ -29,4 +29,4 @@ gulp.task('compass', tasks.compass(gulp, plugins, config));
 gulp.task('watch', tasks.watch(gulp, plugins, config));
 
 // Default
-gulp.task('default', ['watch', 'compass']);
+gulp.task('default', ['watch', 'compass', 'js']);

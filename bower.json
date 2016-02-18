@@ -8,6 +8,11 @@
   "license": "MIT",
   "dependencies": {
     "foundation-sites": "~6.1.0",
-    "motion-ui": "~1.1.0"
+    "motion-ui": "~1.1.0",
+    "text": "^2.0.14",
+    "backbone": "^1.2.3",
+    "underscore": "^1.8.3",
+    "slick": "*",
+    "mdi": "^1.4.57"
   }
 }
