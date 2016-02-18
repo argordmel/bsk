@@ -4,8 +4,8 @@
 $topbar-padding: 0;
 $topbar-background: $primary-color;
 
-@include foundation-top-bar;
-@include foundation-menu;
+//@include foundation-top-bar;
+//@include foundation-menu;
 
 .top-bar {
   height: 3.5rem;
