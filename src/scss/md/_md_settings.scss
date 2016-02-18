@@ -45,26 +45,38 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(960);
 $global-lineheight: 1.5;
-$primary-color: #2199e8;
-$secondary-color: #777;
-$success-color: #3adb76;
-$warning-color: #ffae00;
-$alert-color: #ec5840;
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
+//$primary-color: #2199e8;
+//$secondary-color: #777;
+//$success-color: #3adb76;
+//$warning-color: #ffae00;
+//$alert-color: #ec5840;
+//$light-gray: #e6e6e6;
+//$medium-gray: #cacaca;
+//$dark-gray: #8a8a8a;
+//$black: #0a0a0a;
+$primary-color: $cyan-500;
+$secondary-color: $yellow-500;
+$success-color: $green-500;
+$warning-color: $amber-500;
+$alert-color: $red-500;
+$light-gray: $grey-50;
+$medium-gray: $grey-200;
+$dark-gray: $grey-500;
+$black: $black-87;
 $white: #fefefe;
-$body-background: $white;
+
+$body-background: $grey-200; //$body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: Roboto, Noto, sans-serif; //$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
-$global-weight-normal: normal;
-$global-weight-bold: bold;
+$global-weight-light: 300;
+$global-weight-normal: 400; //$global-weight-normal: normal;
+$global-weight-bold: 500; //$global-weight-bold: bold;
+$global-weight-extra-bold: 700;
 $global-radius: 0;
 $global-text-direction: ltr;
 
@@ -73,7 +85,7 @@ $global-text-direction: ltr;
 
 $breakpoints: (
   small: 0,
-  medium: 640px,
+  medium: 549px,
   large: 1024px,
   xlarge: 1200px,
   xxlarge: 1440px,
@@ -340,10 +352,10 @@ $input-font-size: rem-calc(16);
 $input-background: $white;
 $input-background-focus: $white;
 $input-background-disabled: $light-gray;
-$input-border: 1px solid $medium-gray;
-$input-border-focus: 1px solid $dark-gray;
-$input-shadow: inset 0 1px 2px rgba($black, 0.1);
-$input-shadow-focus: 0 0 5px $medium-gray;
+$input-border: 0; //$input-border: 1px solid $medium-gray;
+$input-border-focus: 0; //$input-border-focus: 1px solid $dark-gray;
+$input-shadow: none; //$input-shadow: inset 0 1px 2px rgba($black, 0.1);
+$input-shadow-focus: none; //$input-shadow-focus: 0 0 5px $medium-gray;
 $input-cursor-disabled: default;
 $input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 $input-number-spinners: true;
@@ -542,7 +554,8 @@ $tooltip-radius: $global-radius;
 // 35. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-padding: 0; //$topbar-padding: 0.5rem;
+$topbar-background: $primary-color; //$topbar-background: $light-gray;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;
+
