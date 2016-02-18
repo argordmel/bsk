@@ -43,26 +43,28 @@
 // ---------
 
 // $global-font-size: 100%;
-// $global-width: rem-calc(1200);
+$global-width: rem-calc(960); // $global-width: rem-calc(1200);
 // $global-lineheight: 1.5;
-// $primary-color: #2199e8;
-// $secondary-color: #777;
-// $success-color: #3adb76;
-// $warning-color: #ffae00;
-// $alert-color: #ec5840;
-// $light-gray: #e6e6e6;
-// $medium-gray: #cacaca;
-// $dark-gray: #8a8a8a;
-// $black: #0a0a0a;
+$primary-color: $cyan-500; // $primary-color: #2199e8;
+$secondary-color: $yellow-500; // $secondary-color: #777;
+$success-color: $green-500; // $success-color: #3adb76;
+$warning-color: $amber-500; // $warning-color: #ffae00;
+$alert-color: $red-500; // $alert-color: #ec5840;
+$light-gray: $grey-50; // $light-gray: #e6e6e6;
+$medium-gray: $grey-200; // $medium-gray: #cacaca;
+$dark-gray: $grey-500; // $dark-gray: #8a8a8a;
+$black: $black-87; // $black: #0a0a0a;
 // $white: #fefefe;
-// $body-background: $white;
-// $body-font-color: $black;
-// $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-background: $grey-200; // $body-background: $white;
+$body-font-color: $black; // $body-font-color: $black;
+$body-font-family: Roboto, Noto, sans-serif; // $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 // $body-antialiased: true;
 // $global-margin: 1rem;
 // $global-padding: 1rem;
-// $global-weight-normal: normal;
-// $global-weight-bold: bold;
+$global-weight-light: 300;
+$global-weight-normal: 400; // $global-weight-normal: normal;
+$global-weight-bold: 500; // $global-weight-bold: bold;
+$global-weight-extra-bold: 700;
 // $global-radius: 0;
 // $global-text-direction: ltr;
 
@@ -231,7 +233,7 @@
 // $button-background-hover: scale-color($button-background, $lightness: -15%);
 // $button-color: #fff;
 // $button-color-alt: #000;
-// $button-radius: $global-radius;
+$button-radius: 2px;
 // $button-sizes: (
 //   tiny: 0.6rem,
 //   small: 0.75rem,
@@ -329,7 +331,7 @@
 // $form-label-font-size: rem-calc(14);
 // $form-label-font-weight: $global-weight-normal;
 // $form-label-line-height: 1.8;
-// $select-background: $white;
+$select-background: transparent; // $select-background: $white;
 // $select-triangle-color: #333;
 // $select-radius: $global-radius;
 // $input-color: $black;
@@ -338,10 +340,10 @@
 // $input-background: $white;
 // $input-background-focus: $white;
 // $input-background-disabled: $light-gray;
-// $input-border: 1px solid $medium-gray;
-// $input-border-focus: 1px solid $dark-gray;
-// $input-shadow: inset 0 1px 2px rgba($black, 0.1);
-// $input-shadow-focus: 0 0 5px $medium-gray;
+$input-border: 0; // $input-border: 1px solid $medium-gray;
+$input-border-focus: 0; // $input-border-focus: 1px solid $dark-gray;
+$input-shadow: none; // $input-shadow: inset 0 1px 2px rgba($black, 0.1);
+$input-shadow-focus: none; // $input-shadow-focus: 0 0 5px $medium-gray;
 // $input-cursor-disabled: default;
 // $input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 // $input-number-spinners: true;
