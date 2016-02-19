@@ -109,3 +109,9 @@
   text-transform: uppercase;
   font-weight: $global-weight-bold !important;
 }
+
+@mixin text-overflow($type: ellipsis) {
+    text-overflow: $type;
+    white-space: nowrap;
+    overflow: hidden;
+}
