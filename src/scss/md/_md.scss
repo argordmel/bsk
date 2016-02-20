@@ -22,3 +22,14 @@
   "components/switches",
   "components/tooltips",
   "components/summary";
+
+  //
+a, .button, select {
+    outline: none !important;
+    &:hover, &:focus, &:active {
+        outline: none !important;
+    }
+    &:-moz-focus-inner {
+        border: 0;
+    }
+}

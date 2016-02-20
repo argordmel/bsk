@@ -23,3 +23,8 @@ $names: 'access-point' 'access-point-network' 'account' 'account-alert' 'account
     font-family: Material Design Icons;
     content: mdi($icon);
 }
+
+.mdi {
+    color: $grey-600;
+    font-size: rem-calc(24);
+}

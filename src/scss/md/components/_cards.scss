@@ -3,6 +3,8 @@
     @extend .z-depth-1;
     background: $white;
 
+    @include grid-row;
+
     .link-icon i {
         margin-top: rem-calc(12);
         float: right;
@@ -30,7 +32,7 @@
         @include grid-column();
         .card-avatar {
             float: left;
-            margin-right: 12px;
+            margin: 0 12px 0 0;
             height: 40px;
             width: 40px;
             img {
@@ -61,31 +63,26 @@
 
     }
 
-    .card-body {
-        @include clearfix;
-        .card-image {
-            img {
-                box-sizing: border-box;
-                display: flex;
-                flex: 0 0 auto;
-                height: auto;
-                width: 100%;
-            }
+    .card-image {
+        margin-left: 0;
+        img {
+            box-sizing: border-box;
+            display: flex;
+            flex: 0 0 auto;
+            height: auto;
+            width: 100%;
         }
-        .card-content {
-            padding-top: rem-calc(30/2);
-            padding-bottom: rem-calc(30/2);
-            @include grid-column();
-            &:after {
-                display: table;
-            }
-            p {
-                margin-bottom: 0;
-            }
-            .card-actions {
-                padding-left: 0;
-                padding-right: 0;
-            }
+    }
+    .card-content {
+        padding-top: rem-calc(30/2);
+        padding-bottom: rem-calc(30/2);
+        @include grid-column();
+        p {
+            margin-bottom: 0;
+        }
+        .card-actions {
+            padding-left: 0;
+            padding-right: 0;
         }
     }
 
