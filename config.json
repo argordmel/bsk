@@ -7,6 +7,7 @@
 	"css":          "./dist/css/**/*.css",
     "templates":    "./src/templates/**/*.html",
 	"views":        [
+        "./*.html",
 		"./views/*.html",
 		"./views/*.phtml",
 		"./views/*.php",
