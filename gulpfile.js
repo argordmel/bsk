@@ -20,7 +20,7 @@ plugins.livereload.listen();
 gulp.task('css', tasks.css(gulp, plugins, config));
 
 // Utility for JS
-gulp.task('js', tasks.js(gulp, plugins, config));
+gulp.task('js', tasks.scripts(gulp, plugins, config));
 
 // Compass
 gulp.task('compass', tasks.compass(gulp, plugins, config));
