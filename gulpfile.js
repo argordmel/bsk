@@ -5,6 +5,7 @@
  */
 var gulp        = require('gulp');
 var plugins     = require('gulp-load-plugins')();
+plugins.guglify = require('gulp-uglify');
 var config      = require('./config.json');
 var pkg         = require('./package.json');
 var requireDir  = require('require-dir');
@@ -20,7 +21,7 @@ plugins.livereload.listen();
 gulp.task('css', tasks.css(gulp, plugins, config));
 
 // Utility for JS
-gulp.task('js', tasks.scripts(gulp, plugins, config));
+gulp.task('scripts', tasks.scripts(gulp, plugins, config));
 
 // Compass
 gulp.task('compass', tasks.compass(gulp, plugins, config));
@@ -29,4 +30,4 @@ gulp.task('compass', tasks.compass(gulp, plugins, config));
 gulp.task('watch', tasks.watch(gulp, plugins, config));
 
 // Default
-gulp.task('default', ['watch', 'compass', 'js']);
+gulp.task('default', ['watch', 'compass', 'scripts']);
