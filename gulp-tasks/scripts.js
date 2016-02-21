@@ -17,18 +17,18 @@ module.exports = function (gulp, plugins, config) {
     return function () {
         gulp.src([config.js])
         .pipe(plugins.requirejs({
-            ptimize: 'none',
+            optimize: 'none',
             wrapShim: true,
             baseUrl: './',
             mainConfigFile: 'src/js/main.js',
             name: 'app',
-            out: 'js/app.js'
+            out: 'dist/js/app.js'
         }))
         .pipe(plugins.amdclean.gulp({
             removeAllRequires: true
         }))
         .pipe(plugins.uglify())
-        .pipe(gulp.dest(config.dist+'/js/'));
+        .pipe(gulp.dest('./'));
 
         /*
         gulp.src([config.js])
