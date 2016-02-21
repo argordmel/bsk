@@ -30,15 +30,6 @@ module.exports = function (gulp, plugins, config) {
         .pipe(plugins.uglify())
         .pipe(gulp.dest('./'));
 
-        /*
-        gulp.src([config.js])
-        .pipe(plugins.concat('main.js'))
-        .pipe(plugins.rename({suffix: '.min'}))
-        .pipe(plugins.uglify())
-        .pipe(gulp.dest(config.dist+'/js/'));
-        */
-
-
     };
 
 };
