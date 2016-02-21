@@ -38,6 +38,7 @@
 //  33. Title Bar
 //  34. Tooltip
 //  35. Top Bar
+//  36. Drawer Menu
 
 // Material Design color libarary
 @import "style/color";
@@ -48,6 +49,7 @@
 // $global-font-size: 100%;
 $global-width: rem-calc(960); // $global-width: rem-calc(1200);
 // $global-lineheight: 1.5;
+$accent-color: $cyan-500;
 $primary-color: $cyan-500; // $primary-color: #2199e8;
 $secondary-color: $yellow-500; // $secondary-color: #777;
 $success-color: $green-500; // $success-color: #3adb76;
@@ -549,3 +551,10 @@ $input-shadow-focus: none; // $input-shadow-focus: 0 0 5px $medium-gray;
 // $topbar-background: $light-gray;
 // $topbar-title-spacing: 1rem;
 // $topbar-input-width: 200px;
+
+// 36. Drawer Menu
+$menu-toggle-width: 24px;
+$menu-toggle-height: 18px;
+$menu-toggle-layer-thickness: 4px;
+$menu-gradient-stop-1: $menu-toggle-height/2 - $menu-toggle-layer-thickness/2;
+$menu-gradient-stop-2: $menu-gradient-stop-1 + $menu-toggle-layer-thickness;
