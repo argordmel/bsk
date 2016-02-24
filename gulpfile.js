@@ -22,12 +22,15 @@ gulp.task('css', tasks.css(gulp, plugins, config));
 
 // Utility for JS
 gulp.task('scripts', tasks.scripts(gulp, plugins, config));
+gulp.task('scripts:prod', tasks.scripts(gulp, plugins, config, true));
 
 // Compass
 gulp.task('compass', tasks.compass(gulp, plugins, config));
+gulp.task('compass:prod', tasks.compass(gulp, plugins, config, true));
 
 // Watch
 gulp.task('watch', tasks.watch(gulp, plugins, config));
+gulp.task('watch:prod', ['watch', 'compass:prod', 'scripts:prod', 'libs:prod'])
 
 // Default
 gulp.task('default', ['watch', 'compass', 'scripts']);

@@ -10,7 +10,7 @@
  * @example gulp clean
  * @see gulpfile.js
  */
-module.exports = function (gulp, plugins, config) {
+module.exports = function (gulp, plugins, config, prod) {
 
     'use strict';
 
@@ -19,20 +19,21 @@ module.exports = function (gulp, plugins, config) {
         gulp.watch([config.js, config.templates])
         .on('change',function (event) {
             console.log('File ' + event.path + ' was ' + event.type);
-            gulp.src([config.js, config.templates])
-            plugins.requirejs({
+            var requirejs   = plugins.requirejs({
                 optimize: 'none',
                 wrapShim: true,
                 baseUrl: './',
                 mainConfigFile: 'src/js/main.js',
                 name: 'app',
                 out: 'dist/js/app.js'
-            })
-            .pipe(plugins.amdclean.gulp({
+            });
+            requirejs.pipe(plugins.amdclean.gulp({
                 removeAllRequires: true
-            }))
-            .pipe(plugins.guglify())
-            .pipe(gulp.dest('./'));
+            }));
+            if(prod) {
+                requirejs.pipe(plugins.guglify());
+            }
+            requirejs.pipe(gulp.dest('./'));
         });
 
     };
