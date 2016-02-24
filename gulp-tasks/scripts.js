@@ -5,6 +5,7 @@
  * @param  {Gulp} gulp
  * @param  {Object} plugins Available gulp plugins
  * @param  {Object} config  Configuration options
+ * @param  {boolean} prod  Build to production
  * @return {function} Gulp task
  *
  * @example gulp clean
