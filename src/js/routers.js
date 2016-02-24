@@ -43,7 +43,7 @@ function (
         },
 
         // NOT FOUND PAGE
-        notFound: function (){
+        notFound: function () {
             var _this   = this;
             _this.navigate('404', {trigger: true});
         }

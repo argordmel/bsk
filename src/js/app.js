@@ -1,4 +1,3 @@
-
 define([
     'jquery',
     'underscore',
@@ -61,7 +60,15 @@ function (
     });
 
     //
+    // PUSHSTATE
+    //
+
+    Backbone.history.start({
+        pushState: true
+    });
+
+    //
     // GOOGLE ANALYTICS HERE
     //
-    
+
 });

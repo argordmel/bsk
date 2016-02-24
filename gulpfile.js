@@ -30,7 +30,7 @@ gulp.task('compass:prod', tasks.compass(gulp, plugins, config, true));
 
 // Watch
 gulp.task('watch', tasks.watch(gulp, plugins, config));
-gulp.task('watch:prod', ['watch', 'compass:prod', 'scripts:prod', 'libs:prod'])
+gulp.task('watch:prod', ['watch', 'compass:prod', 'scripts:prod']);
 
 // Default
 gulp.task('default', ['watch', 'compass', 'scripts']);
