@@ -6,6 +6,7 @@
 var gulp        = require('gulp');
 var plugins     = require('gulp-load-plugins')();
 plugins.guglify = require('gulp-uglify');
+plugins.grm     = require('requirejs-metagen');
 var config      = require('./config.json');
 var pkg         = require('./package.json');
 var requireDir  = require('require-dir');

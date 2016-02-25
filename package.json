@@ -43,6 +43,7 @@
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.5.2"
+    "gulp-uglify": "^1.5.2",
+    "requirejs-metagen": "^1.2.1"
   }
 }

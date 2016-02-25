@@ -1,11 +1,11 @@
 {
 	"app":          "./src",
 	"dist":         "./dist",
+	"css":          "./dist/css/**/*.css",
 	"scss":         "./src/scss",
 	"test":         "./test/unit/**/*.js",
 	"js":           "./src/js/**/*.js",
-	"css":          "./dist/css/**/*.css",
-    "templates":    "./src/templates/**/*.html",
+    "templates":    "./src/js/templates/**/*.html",
 	"views":        [
         "./*.html",
 		"./views/*.html",
