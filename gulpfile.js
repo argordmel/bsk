@@ -8,6 +8,7 @@ var plugins     = require('gulp-load-plugins')();
 plugins.guglify = require('gulp-uglify');
 plugins.rsass   = require('gulp-ruby-sass');
 plugins.grm     = require('requirejs-metagen');
+plugins.path    = require('path');
 var config      = require('./config.json');
 var pkg         = require('./package.json');
 var requireDir  = require('require-dir');
