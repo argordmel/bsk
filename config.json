@@ -3,6 +3,12 @@
 	"dist":         "./dist",
 	"css":          "./dist/css/**/*.css",
 	"scss":         "./src/scss",
+	"sassFiles":    "./src/scss/**/*.scss",
+    "sassPaths":    [
+        "bower_components/foundation-sites/scss",
+        "bower_components/motion-ui/src",
+        "bower_components/mdi/scss"
+    ],
 	"test":         "./test/unit/**/*.js",
 	"js":           "./src/js/**/*.js",
     "templates":    "./src/js/templates/**/*.html",

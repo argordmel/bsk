@@ -13,6 +13,7 @@
     "backbone": "^1.2.3",
     "underscore": "^1.8.3",
     "slick": "*",
-    "mdi": "^1.4.57"
+    "mdi": "^1.4.57",
+    "backbone.controller": "*"
   }
 }

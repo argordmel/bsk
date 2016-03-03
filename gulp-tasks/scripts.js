@@ -20,8 +20,9 @@ module.exports = function (gulp, plugins, config, prod) {
         gulp.watch([config.js, config.templates])
         .on('change',function (event) {
             console.log('File ' + event.path + ' was ' + event.type);
+
             // If is a controller
-            if(/(_controller\.js)/.test(event.path)) {
+            if(/(Controller\.js)/.test(event.path)) {
                 console.log("Building controllers");
                 var controllerOpts =  {
                     inputFolder: config.app+'/js/controllers/src/',
