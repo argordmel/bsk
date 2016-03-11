@@ -1,5 +1,3 @@
-// @NOTE: The js/oauth/ folder scripts are not used in this app as a module.
-
 
 require.config({
 
@@ -11,7 +9,6 @@ require.config({
         // App
         app: 'src/js/app',
         routers: 'src/js/config/routers',
-        controllers: 'src/js/controllers/all',
 
         // Libraries.
         jquery: 'bower_components/jquery/dist/jquery',
@@ -19,10 +16,14 @@ require.config({
         foundation: 'bower_components/foundation-sites/dist/foundation.min',
         underscore: 'bower_components/underscore/underscore',
         text: 'bower_components/text/text',
-        backbone: 'bower_components/backbone/backbone'
+        backbone: 'bower_components/backbone/backbone',
+        'backbone.controller': 'bower_components/backbone.controller/backbone.controller',
 
         // Controllers
+        controllers: 'src/js/config/controllers',
 
+        // Models
+        models: 'src/js/config/models'
 
     }
 

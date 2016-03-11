@@ -15,24 +15,16 @@ function (Backbone, Controllers) {
         // Initialize
         initialize: function() {
 
+            // Load all controllers
             for ( controller in Controllers ) {
-                var cntr = requirejs('./src/js/controllers/src/' + controller);
-                console.log(cntr);
+                this.controllers[controller] = new Controllers[controller]({router: this});
             }
-
-            // Your controllers here
-            //this.controllers.home   = new HomeController({router: this});
-
 
             // PUSHSTATE
             //
             Backbone.history.start({
-                pushState: true
+                //pushState: true
             });
-
-        },
-
-        _loadControllers: function(Controllers) {
 
         }
 

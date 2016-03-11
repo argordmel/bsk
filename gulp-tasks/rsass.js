@@ -17,17 +17,21 @@ module.exports = function (gulp, plugins, config, prod) {
 
     return function () {
 
-        gulp.watch([config.sassFiles])
+        gulp.watch([config.sass+'/**/*.scss'])
         .on('change',function (event) {
+
             console.log('File ' + event.path + ' was ' + event.type);
-            return plugins.rsass(config.sassFiles, {
+
+            return plugins.rsass(config.sass+'/**/*.scss', {
                 stopOnError: false,
                 loadPath: [config.sassPaths],
                 lineNumbers: true,
                 compass: true
             })
             .on('error', plugins.rsass.logError)
+            .pipe(plugins.autoprefixer(config.browsers))
             .pipe(gulp.dest(config.dist+'/css'));
+
         });
 
     };

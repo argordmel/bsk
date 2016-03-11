@@ -17,21 +17,21 @@ module.exports = function (gulp, plugins, config, prod) {
 
     return function () {
 
-        gulp.watch([config.sassFiles])
+        gulp.watch([config.sass+'/**/*.scss'])
         .on('change',function (event) {
+
             console.log('File ' + event.path + ' was ' + event.type);
-            return gulp.src([config.sassFiles])
-            .pipe(
-                plugins.sass({
-                    includePaths: config.sassPaths,
-                    outputStyle: 'compact',
-                    sourceComments: 'normal'
-                })
-                .on('error', plugins.sass.logError))
-            .pipe(plugins.autoprefixer({
-                browsers: ['last 2 versions', 'ie >= 9']
+
+            return gulp.src([config.sass+'/**/*.scss'])
+            .pipe(plugins.sass({
+                includePaths: config.sassPaths,
+                outputStyle: (prod) ? 'compressed' : 'compact',
+                sourceComments: 'normal'
             }))
+            .on('error', plugins.sass.logError)
+            .pipe(plugins.autoprefixer(config.browsers))
             .pipe(gulp.dest(config.dist+'/css'));
+
         });
 
     };

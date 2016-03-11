@@ -2,8 +2,7 @@
 	"app":          "./src",
 	"dist":         "./dist",
 	"css":          "./dist/css/**/*.css",
-	"scss":         "./src/scss",
-	"sassFiles":    "./src/scss/**/*.scss",
+	"sass":         "./src/scss",
     "sassPaths":    [
         "bower_components/foundation-sites/scss",
         "bower_components/motion-ui/src",

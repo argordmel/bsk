@@ -16,18 +16,15 @@ module.exports = function (gulp, plugins, config, prod) {
     'use strict';
 
     return function () {
-        gulp.src(config.scss)
+
+        gulp.src(config.sass)
         .pipe(plugins.compass({
             task: 'watch',
             project: plugins.path.join(__dirname, '../'),
-            import_path: [
-                "bower_components/foundation-sites/scss",
-                "bower_components/motion-ui/src",
-                "bower_components/mdi/scss"
-            ],
+            import_path: config.sassPaths,
             style: (prod) ? 'compressed' : 'compact',
             comments: (prod) ? false : true,
-            sass: config.scss,
+            sass: config.sass,
             css: config.dist+'/css'
         })).on('error', function(err) {
             console.log("Error: ", err);
