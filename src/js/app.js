@@ -16,15 +16,6 @@ function ($, _, Backbone, Router) {
     };
 
 
-    //
-    // ROUTER
-    //
-
-    Router.on('route', function (route) {
-        switch (route) {
-            default: '';
-        }
-    });
 
     //
     // GOOGLE ANALYTICS HERE

@@ -6,24 +6,34 @@ require.config({
     // AMD Modules.
     paths: {
 
-        // App
-        app: 'src/js/app',
-        routers: 'src/js/config/routers',
-
-        // Libraries.
-        jquery: 'bower_components/jquery/dist/jquery',
-        whatinput: 'bower_components/foundation-sites/dist/foundation.min',
-        foundation: 'bower_components/foundation-sites/dist/foundation.min',
+        // Vendors
         underscore: 'bower_components/underscore/underscore',
         text: 'bower_components/text/text',
         backbone: 'bower_components/backbone/backbone',
         'backbone.controller': 'bower_components/backbone.controller/backbone.controller',
 
+        // App
+        app: 'src/js/app',
+
+        // Routers
+        routers: 'src/js/_config/routers',
+
+        // Components
+        components: 'src/js/_config/components',
+
         // Controllers
-        controllers: 'src/js/config/controllers',
+        controllers: 'src/js/_config/controllers',
 
         // Models
-        models: 'src/js/config/models'
+        models: 'src/js/_config/models',
+
+        // Views
+        views: 'src/js/_config/views',
+
+        // Libraries.
+        jquery: 'bower_components/jquery/dist/jquery',
+        whatinput: 'bower_components/foundation-sites/dist/foundation.min',
+        foundation: 'bower_components/foundation-sites/dist/foundation.min'
 
     }
 

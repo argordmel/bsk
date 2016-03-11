@@ -10,7 +10,7 @@
     ],
 	"test":         "./test/unit/**/*.js",
 	"js":           "./src/js/**/*.js",
-    "templates":    "./src/js/templates/**/*.html",
+    "templates":    "./src/js/views/**/*.html",
 	"views":        [
         "./*.html",
 		"./views/*.html",

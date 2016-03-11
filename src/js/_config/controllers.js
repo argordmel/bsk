@@ -9,6 +9,6 @@ function (Home) {
     return {
         'HomeController': Home
     };
-
+    
 
 });

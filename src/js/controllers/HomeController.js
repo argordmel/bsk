@@ -1,12 +1,17 @@
-/***
+/**
  * HomeController
+ *
+ * @description
  */
+
 define([
     'backbone',
     'underscore',
+    'models',
+    'views',
     'backbone.controller'
 ],
-function (Backbone, _, Controller) {
+function (Backbone, _, Models, Views, Controller) {
 
     var HomeController  = Backbone.Controller.extend({
 
@@ -26,7 +31,16 @@ function (Backbone, _, Controller) {
 
         // List all elements
         list: function(page, per_page) {
-            console.log('List Controller');
+
+            // Instance of model
+            var example = new Models.Example;
+
+            // Get data
+            var data    = example.getElements();
+
+            // Render view
+            Views.render('Table', data);
+
         },
 
         // Method to search
