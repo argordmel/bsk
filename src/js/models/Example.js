@@ -22,6 +22,13 @@ define([
 
         getElements: function() {
             return ['red', 'blue', 'orange', 'black', 'white', 'yellow'];
+        },
+
+        setElements: function() {
+            return Api.post('exaple', {parm: 1, param: 2})
+            .done(function() {})
+            .always(function(){})
+            .error(function() {})
         }
 
     });
